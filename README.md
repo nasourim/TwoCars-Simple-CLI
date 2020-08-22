@@ -6,13 +6,13 @@ A Simple Two Cars Game Remake with C++ for command line usage
 Similar to TwoCars on smartphones, avoid the 'X's and take 'O's.  
 Keys: 'A', 'D', Space, ESC, Left Arrow, Right Arrow, Up Arrow, Down Arrow.  
 ##### Functions:  
-- **'A' Or Left Arrow**
+- **'A' Or Left Arrow**  
 *To Make Left Car Swap Lane.*
-- **'D' Or Right Arrow**
+- **'D' Or Right Arrow**  
 *To Make Right Car Swap Lane.*
-- **Space Or Up Arrow Or Down Arrow**
+- **Space Or Up Arrow Or Down Arrow**  
 *To Make Both Cars Swap Lane.*
-- **ESC**
+- **ESC**  
 *End The Game.*
   
 ## How to build  
