@@ -2,6 +2,19 @@
 A Simple Two Cars Game Remake with C++ for command line usage  
   
   
+## How to play  
+Similar to TwoCars on smartphones, avoid the 'X's and take 'O's.  
+Keys: 'A', 'D', Space, ESC, Left Arrow, Right Arrow, Up Arrow, Down Arrow.  
+##### Functions:  
+- **'A' Or Left Arrow**
+*To Make Left Car Swap Lane.*
+- **'D' Or Right Arrow**
+*To Make Right Car Swap Lane.*
+- **Space Or Up Arrow Or Down Arrow**
+*To Make Both Cars Swap Lane.*
+- **ESC**
+*End The Game.*
+  
 ## How to build  
 You might need Microsoft Visual Studio to make a successful build or another C++ compiler that supports windows header files and its corresponding functions such as _kbhit and _getch.  
 Good Luck on your build.  
