@@ -110,6 +110,7 @@ void Game::control()
 	}
 
 	bool newObject = false;
+	bool isScore = false;
 	for (int i = 0; i < STAGE_NUMBER_OF_OBJECTS; i++) {
 		if (this->obstacles[i].y == CAR_ROW && (this->obstacles[i].x == getLeftCarX() || this->obstacles[i].x == getRightCarX())) {
 			gameOver = true;
@@ -117,6 +118,7 @@ void Game::control()
 
 		if (this->scores[i].y == CAR_ROW && (this->scores[i].x == getLeftCarX() || this->scores[i].x == getRightCarX())) {
 			this->score += 10;
+			isScore = true;
 			item_before[i] = scores[i];
 			scores[i].x = 2*(rand() % 4) + 1;
 			scores[i].y = rand() % TABLE_HEIGHT - TABLE_HEIGHT;
@@ -135,6 +137,10 @@ void Game::control()
 			obstacles[i].x = 2*(rand() % 4) + 1;
 			obstacles[i].y = rand() % TABLE_HEIGHT - TABLE_HEIGHT;
 			newObject = true;
+		}
+
+		if (this->scores[i].y > CAR_ROW && !isScore) {
+			gameOver = true;
 		}
 
 		if (this->scores[i].y > CAR_ROW) {
