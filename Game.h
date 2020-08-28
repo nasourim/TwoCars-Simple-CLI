@@ -38,16 +38,16 @@ public:
 	Game();
 	~Game() = default;
 	void run();
-	void drawTable();
+	void drawTable() const;
 	void updateTable();
 	void control();
 	void input();
-	int getLeftCarX();
-	int getRightCarX();
-	static void printXY(int x, int y, LPCSTR lp_cstr, int length);
-	static void printObjects(int x, int y, char c);
-	void printScore();
-	void printCars();
+	int getLeftCarX() const;
+	int getRightCarX() const;
+	static void printXY(const int x, const int y, const LPCSTR write_string, const int length);
+	static void printObjects(const int x, const int y, char character);
+	void printScore() const;
+	void printCars() const;
 
 };
 
