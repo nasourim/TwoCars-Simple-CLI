@@ -9,6 +9,7 @@ public:
 	Coordinate();
 	Coordinate(int x_coordinate, int y_coordinate);
 	~Coordinate() = default;
+	void operator = (Coordinate &rhs);
 };
 
 

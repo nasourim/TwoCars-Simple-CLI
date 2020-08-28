@@ -14,5 +14,6 @@ int main() {
 		cout << endl << "GAME OVER!" << endl;
 //		cout << endl << "PRESS ENTER TO RESTART! OR Another Key to End!" << endl;
 //	} while (_getch() == ENTER_KEY);
+	_getch();
 	return 0;
 }
