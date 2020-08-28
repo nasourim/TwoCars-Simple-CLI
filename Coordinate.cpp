@@ -9,3 +9,9 @@ Coordinate::Coordinate(int x_coordinate, int y_coordinate) {
 	this->x = x_coordinate;
 	this->y = y_coordinate;
 }
+
+void Coordinate::operator=( Coordinate &rhs )
+{
+	this->x = rhs.x;
+	this->y = rhs.y;
+}
